@@ -1,6 +1,27 @@
-#plot {
-  height: 32px;
-  width: 96px;
-  background: darkturquoise;
-  font-size: 24px;
+#root {
+  border: 1px solid #000;
+  display: table;
+}
+
+#canvasOut {
+  border: 1px solid #000;
+}
+
+.output {
+  width: 160px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #000;
+  text-align: center;
+  float: right;
+}
+
+.holder {
+  overflow: hidden;
+}
+
+#grayscale {
+  height: 36px;
+  cursor: pointer;
+  text-transform: uppercase;
 }

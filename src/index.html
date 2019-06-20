@@ -5,23 +5,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Stats</title>
+	<title>Canvas</title>
 
 </head>
 
 <body>
-    <div id="root"></div>
-    <h1>Statistics Sandbox</h1>
-    <h2>Random Distributions</h2>
-    <div>
-        <canvas id="canvas" width="400" height="500"></canvas>
+    <div class="holder">
+        <div style="display:none;">
+            <button id="grayscale">grayscale</button>
+        </div>
+
+        <div id="color" class="output"></div>
+        <div id="coords" class="output"></div>
     </div>
-    <div>
-        <button id="plot">refresh</button>
+    <div id="root">
+        <canvas id="canvas"></canvas>
     </div>
-    <div class="footer">
+    <canvas id="canvasOut" width="858px" height="486px"></canvas>
+    <!--<h1>Canvas Sandbox</h1>-->
+    <div style="display:none;">
+        <img id="source"
+             src="/text.jpg"
+             width="300" height="227">
+    </div>
+    <!--<div class="footer">
         <a href="mailto:grymyk@gmail.com">grymyk@gmail.com</a><span>© 2019</span>
-    </div>
+    </div>-->
     <!--<script src="index.bundle.js"></script>-->
 </body>
 
